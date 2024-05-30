@@ -129,6 +129,7 @@
                    Disabled="IsDisabledMulti"
                    EnableDropDown="true"
                    MinimumLength="2"
+                   MultiValueStyle="@GetStyle"
                    placeholder="Search by first name...">
     <SelectedTemplate Context="person">
         @person.Firstname
@@ -273,6 +274,11 @@
     public int? ConvertPerson(Person person)
     {
         return person?.Id;
+    }
+
+    public string? GetStyle(Person person)
+    {
+        return person?.Id > 20 ? "background-color: blue" : "background-color: green";
     }
 
     public Person LoadSelectedPerson(int? id)

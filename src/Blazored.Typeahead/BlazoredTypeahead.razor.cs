@@ -51,6 +51,7 @@ namespace Blazored.Typeahead
 
         [Parameter] public bool StopPropagation { get; set; } = false;
         [Parameter] public bool PreventDefault { get; set; } = false;
+        [Parameter] public Func<TValue, string> MultiValueStyle { get; set; } = value => string.Empty;
 
         private bool IsSearching { get; set; } = false;
         private bool IsShowingSuggestions { get; set; } = false;

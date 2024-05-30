@@ -56,7 +56,7 @@
                     {
                         @foreach (var value in Values)
                         {
-                            <div class="blazored-typeahead__multi-value">
+                            <div class="blazored-typeahead__multi-value" style="@MultiValueStyle(value)">
                                 <div class="blazored-typeahead__multi-value-label">
                                     @SelectedTemplate(value)
                                 </div>

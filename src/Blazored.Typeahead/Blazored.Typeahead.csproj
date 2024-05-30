@@ -1,17 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-
     <Authors>Chris Sainty</Authors>
-    <Company></Company>
-    <Copyright>Copyright 2020 (c) Chris Sainty. All rights reserved.</Copyright> 
+    <Company>
+    </Company>
+    <Copyright>Copyright 2020 (c) Chris Sainty. All rights reserved.</Copyright>
     <Description>A typeahead component for Blazor applications</Description>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-
     <!-- NuGet settings -->
     <PackageId>Blazored.Typeahead</PackageId>
     <PackageTags>Blazored;Blazor;Razor;Components;Typeahead;Autocomplete;Auto Complete;ASP.NET Core;CSharp;Web</PackageTags>
@@ -20,19 +18,15 @@
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Blazored/Typeahead</RepositoryUrl>
-
     <!-- SourceLink settings -->
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="6.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.3" />
-  </ItemGroup>
-
   <ItemGroup>
     <None Include="icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.6" />
+  </ItemGroup>
 </Project>
